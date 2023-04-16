@@ -16,3 +16,24 @@ let matriz_company = company.split(",");
 
 console.log(matriz_company);
 console.log(desafio.replace("JavaScript", "Python"));
+console.log(desafio.charAt(15));
+console.log(desafio.charCodeAt("J"));
+console.log(desafio.indexOf("a"));
+console.log(desafio.lastIndexOf("a"));
+
+let oracion =
+  "No puedes terminar una oracion con porque porque es una conjuncion";
+console.log(oracion.indexOf("porque"));
+console.log(oracion.lastIndexOf("porque"));
+console.log(oracion.search("porque"));
+
+console.log(desafio.trim());
+console.log(desafio.startsWith("3"));
+console.log(desafio.endsWith("t"));
+let patternA = /a/gi;
+console.log(desafio.match("a"));
+console.log(desafio.match(patternA));
+let dias = "30 dias de ";
+let lenguaje = "JavaScript";
+console.log(dias.concat(lenguaje));
+console.log(desafio.repeat(2));
