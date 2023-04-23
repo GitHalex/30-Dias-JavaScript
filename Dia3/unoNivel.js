@@ -49,7 +49,7 @@ let name2 = "python";
 console.log(!name1.endsWith("on"));
 console.log(!name2.endsWith("on")); */
 
-let now = new Date();
+/* let now = new Date();
 console.log(now);
 console.log(`el año es: ${now.getFullYear()}`);
 console.log(`el mes es: ${now.getMonth() + 1}`);
@@ -59,4 +59,4 @@ console.log(`minutos es: ${now.getMinutes()}`);
 let milisegundos = now.getTime();
 console.log(milisegundos);
 
-console.log(`en segundos es ${milisegundos / 1000}`);
+console.log(`en segundos es ${milisegundos / 1000}`); */
