@@ -61,3 +61,17 @@ yearAhora >= 18
         18 - yearAhora
       } años20`
     ); */
+
+/* let numYear = parseInt(prompt("Ingrese el numero de años: "));
+console.log(`Viviste ${numYear * 365 * 24 * 60 * 60}`); */
+
+/* let now = new Date();
+console.log(
+  `${now.getFullYear()}-${now.getMonth()}-${now.getDay()} ${now.getHours()}:${now.getMinutes()}`
+);
+console.log(
+  `${now.getDay()}-${now.getMonth()}-${now.getFullYear()} ${now.getHours()}:${now.getMinutes()} `
+);
+console.log(
+  `${now.getDay()}/${now.getMonth()}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}`
+); */
