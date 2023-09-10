@@ -25,7 +25,7 @@ const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 } */
 
 /* let i = 0;
-do {4
+do {
   console.log(numbers[i]);
   i++;
 } while (i <= 10); */
@@ -88,6 +88,7 @@ for (let num = 0; num < 5; num++) {
   }
 }
 console.log(ale); */
+
 /* const character =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz123456789";
 let id = "";
