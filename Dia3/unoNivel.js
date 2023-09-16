@@ -15,6 +15,7 @@ console.log(typeof year);
 
 console.log(typeof "10");
 console.log(typeof 10);
+
 console.log(typeof parseInt("9.8") == 10); */
 
 /* console.log(4 > 3);
@@ -49,7 +50,7 @@ let name2 = "python";
 console.log(!name1.endsWith("on"));
 console.log(!name2.endsWith("on")); */
 
-/* let now = new Date();
+let now = new Date();
 console.log(now);
 console.log(`el año es: ${now.getFullYear()}`);
 console.log(`el mes es: ${now.getMonth() + 1}`);
@@ -58,5 +59,8 @@ console.log(`hora actual es: ${now.getHours()}`);
 console.log(`minutos es: ${now.getMinutes()}`);
 let milisegundos = now.getTime();
 console.log(milisegundos);
-
-console.log(`en segundos es ${milisegundos / 1000}`); */
+console.log(`en segundos es ${milisegundos / 1000}`);
+const allSeconds = Date.now();
+console.log(
+  `${allSeconds} de segundos transcurridos desde el 1 de enero de 1977`
+);
