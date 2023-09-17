@@ -26,9 +26,7 @@ const webTechs = [
 console.log(vacio);
 
 const numbers = [1, 2, 3, 4, 5];
-
 console.log(numbers);
-
 console.log(numbers.length);
 
 console.log(
@@ -91,7 +89,7 @@ existe
   }
 } */
 
-console.log(itCompanies);
+/* console.log(itCompanies);
 console.log(itCompanies.sort());
 console.log(itCompanies.reverse());
 console.log(itCompanies.slice(0, 3));
@@ -101,4 +99,4 @@ console.log(itCompanies.splice(0, 1));
 console.log(itCompanies);
 console.log(itCompanies.splice(2, 3, 3));
 console.log(itCompanies.pop());
-console.log(itCompanies.splice());
+console.log(itCompanies.splice()); */
