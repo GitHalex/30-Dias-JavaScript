@@ -99,7 +99,7 @@ console.log(densitySustance(2, 3)); */
   return distance / time + " m/s";
 }
 console.log(`La velocidad es: ${velocity(10, 5)}`); */
-/* const velocity = (distance, time) => distance / time + " m/s";
+/* const velocity = (distance, time) => distance / time +s " m/s";
 console.log(`La velocidad es: ${velocity(10, 5)}`); */
 
 //11.-El peso de una sustancia se calcula de la siguiente manera: weight = mass x gravity. Escribe una función weight que calcule el peso de una sustancia.
@@ -176,59 +176,3 @@ console.log(checkSeason()); */
 console.log(findMax(0, 10, 5));
 console.log(findMax(0, -10, -2));
  */
-
-/* const person = {
-  firstName: "Asabeneh",
-  lastName: "Yetayeh",
-  age: 250,
-  country: "Finland",
-  city: "Helsinki",
-  skills: [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "Node",
-    "MongoDB",
-    "Python",
-    "D3.js",
-  ],
-  getFullName: function () {
-    return `${this.firstName} ${this.lastName}`;
-  },
-};
-person.nationality = "Ethiopian";
-person.country = "Finland";
-person.title = "teacher";
-person.skills.push("Meteor");
-person.skills.push("SasS");
-person.isMarried = true; */
-
-/* person.getPersonInfo = function () {
-  let skillsWithoutLastSkill = this.skills
-    .splice(0, this.skills.length - 1)
-    .join(", ");
-  let lastSkill = this.skills.splice(this.skills.length - 1)[0];
-
-  let skills = `${skillsWithoutLastSkill}, and ${lastSkill}`;
-  let fullName = this.getFullName();
-  let statement = `${fullName} is a ${this.title}.\nHe lives in ${this.country}.\nHe teaches ${skills}.`;
-  return statement;
-};
-console.log(person);
-console.log(person.getPersonInfo()); */
-
-const languages = [
-  "English",
-  "Finnish",
-  "English",
-  "French",
-  "Spanish",
-  "English",
-  "French",
-];
-const langSet = new Set(languages);
-for (const l of langSet) {
-  const filteradlang = languages.filter((lng) => lng == l);
-  console.log(filteradlang);
-}

@@ -1,4 +1,4 @@
-const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+/* const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
 console.log(`Min: ${Math.min(...ages)}`);
 console.log(`Min: ${Math.max(...ages)}`);
 let tam = ages.length;
@@ -6,7 +6,7 @@ let tam = ages.length;
 let suma = 0;
 for (let i of ages) {
   suma += i;
-}
+} */
 
 /* let promedio = suma / ages.length;
 console.log(`Edad promedio ${promedio}`);

@@ -30,7 +30,7 @@ console.log(color);
 // Utilizar el color generado para pintar algún elemento en el documento
 document.body.style.backgroundColor = color; */
 
-/* const countries = [
+const countries = [
   "Albania",
   "Bolivia",
   "Canada",
@@ -42,7 +42,7 @@ document.body.style.backgroundColor = color; */
   "Ireland",
   "Japan",
   "Kenya",
-]; */
+];
 
 /* let mayusculas = [];
 for (let index = 0; index < countries.length; index++) {
@@ -64,15 +64,17 @@ let mitad = "";
 let tam = 0;
 let arrayAux = [];
 for (let index = 0; index < countries.length; index++) {
-  country = countries[index];
-  arreglo.push(country);
-  mitad = country.substring(2);
-  arreglo.push(mitad);
-  tam = country.length;
-  arreglo.push(tam);
+  for (let j = 0; j < countries.length; j++) {
+    country = countries[j];
+    arrayAux.push(country);
+    mitad = country.substring(2);
+    arrayAux.push(mitad);
+    tam = country.length;
+    arrayAux.push(tam);
+  }
+  arreglo.push(arrayAux);
 }
-console.log(arreglo);
- */
+console.log(arreglo); */
 
 /* let element = "";
 let arreglo = [];
@@ -100,7 +102,7 @@ for (let index = 0; index < countries.length; index++) {
 console.log(`paises con ia ${arrIA}`);
 console.log(`paises sin ia ${arreAxu}`); */
 
-const countries = [
+/* const countries = [
   "Albania",
   "Bolivia",
   "Canada",
@@ -112,7 +114,7 @@ const countries = [
   "Ireland",
   "Japan",
   "Kenya",
-];
+]; */
 
 /* let element = 0;
 let mayor = "";
@@ -157,10 +159,9 @@ console.log(mayorCadena); */
 let aux = [];
 let tam = 0;
 for (let i = 0; i < webTechs.length; i++) {
-  arr.push(webTechs[i], webTechs[i].length);
+  aux[i].push(arr.push(webTechs[i], webTechs[i].length));
 }
-console.log(arr);
- */
+console.log(aux); */
 
 /* const mernStack = ["MongoDB", "Express", "React", "Node"];
 let acronimo = "";
@@ -193,7 +194,7 @@ for (let index = size; index > -1; index--) {
   console.log(frutas);
 } */
 
-const fullStack = [
+/* const fullStack = [
   ["HTML", "CSS", "JS", "React"],
   ["Node", "Express", "MongoDB"],
 ];
@@ -203,4 +204,4 @@ for (let i = 0; i < fullStack.length; i++) {
   for (const stack of fullStack[i]) {
     console.log(stack);
   }
-}
+} */
