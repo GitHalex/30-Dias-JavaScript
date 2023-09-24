@@ -1,10 +1,37 @@
-let a = [1, 2, 3, 4, 5];
-let b = [3, 4, 5, 6];
+const a = [4, 5, 8, 9];
+const b = [3, 4, 5, 7];
+const countries = ["Finland", "Sweden", "Norway"];
 
-let A = new Set(a);
-let B = new Set(b);
+/* const vacio = new Set();
+console.log(vacio); */
 
-let c = a.filter((num) => B.has(num));
-let C = new Set(c);
+const num10 = new Set();
+const numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+for (const num of numeros) {
+  num10.add(num);
+}
+console.log(num10);
 
-console.log(C);
+console.log(num10.delete(10));
+console.log(num10);
+
+num10.clear();
+console.log(num10);
+
+const arrayStrings = ["Hola", "Como", "Estas", "Bien", "Mal"];
+const strings = new Set();
+for (const stringa of arrayStrings) {
+  strings.add(stringa);
+}
+console.log(strings);
+
+const mapCountries = new Map();
+
+countriesPais = [
+  ["Finland", "Helsinki"],
+  ["Sweden", "Stockholm"],
+  ["Norway", "Oslo"],
+];
+const map = new Map(countriesPais);
+console.log(map);
+console.log(map.size);
