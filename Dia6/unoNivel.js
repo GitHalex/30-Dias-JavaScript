@@ -13,22 +13,19 @@ do {
   num++;
 } while (num <= 10); */
 
-const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+/* const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let tam = numbers.length;
+console.log(tam); */
 
-/* for (let index = 0; index < numbers.length; index++) {
-  const element = array[index];
-}
- */
-
-/* for (const num of numbers) {
-  console.log(num);
+/* for (let index = tam; index > -1; index--) {
+  console.log(numbers[index]);
 } */
 
-/* let i = 0;
+/* let i = tam;
 do {
   console.log(numbers[i]);
-  i++;
-} while (i <= 10); */
+  i--;
+} while (i > -1); */
 
 /* let n = parseInt(prompt("Ingrese un numero: "));
 for (let index = 0; index <= n; index++) {
@@ -80,14 +77,15 @@ for (let num = 0; num < 5; num++) {
 }
 console.log(al); */
 
-/* let ale = [];
+let ale = [];
 for (let num = 0; num < 5; num++) {
-  ale.push(Math.floor(Math.random() * 10));
-  if () {
-      
+  let elemento = Math.floor(Math.random() * 10);
+  console.log(elemento);
+  if (ale.indexOf(elemento) === -1) {
+    ale.push(elemento);
   }
 }
-console.log(ale); */
+console.log(ale);
 
 /* const character =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz123456789";

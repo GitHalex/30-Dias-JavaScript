@@ -3,9 +3,9 @@
 let arreglo = text.split(" ");
 console.log(arreglo);
 let tamarreglo = arreglo.length;
-console.log(tamarreglo);
+console.log(tamarreglo); */
 
-const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+/* const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
 shoppingCart.unshift("Meat");
 console.log(shoppingCart);
 shoppingCart.push("Sugar");
@@ -56,8 +56,9 @@ if (webTechs.includes("Sass")) {
 }
 console.log(webTechs); */
 
-/* const frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
+const frontEnd = ["HTML", "CSS", "JS", "React", "Redux"];
 const backEnd = ["Node", "Express", "MongoDB"];
 const fullStack = frontEnd.concat(backEnd);
 console.log(fullStack);
- */
+const fullStack2 = [...frontEnd, ...backEnd];
+console.log(fullStack2);

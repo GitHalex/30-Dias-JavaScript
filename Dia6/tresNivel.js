@@ -195,11 +195,11 @@ const countries = [
 ];
 // console.log(countries);
 
-const sortedCountries = [];
+/* const sortedCountries = [];
 for (const countri of countries) {
   sortedCountries.push(countri);
 }
-console.log(sortedCountries);
+console.log(sortedCountries.sort()); */
 
 const webTechs = [
   "HTML",
@@ -211,8 +211,9 @@ const webTechs = [
   "MongoDB",
 ];
 
-/* const mernStack = ["MongoDB", "Express", "React", "Node"];
-webTechs.sort();
+const mernStack = ["MongoDB", "Express", "React", "Node"];
+
+/* webTechs.sort();
 mernStack.sort();
 console.log(webTechs);
 console.log(mernStack); */
@@ -225,8 +226,35 @@ for (const pais of countries) {
 }
 console.log(paisLand); */
 
-/* const paisLand = [];
-for (const pais of countries) {
+/* let elemento = 0;
+let mayorPais = "";
+for (const country of countries) {
+  if (elemento < country.length) {
+    elemento = country.length;
+    mayorPais = country;
+  }
 }
-console.log(paisLand);
- */
+console.log(mayorPais); */
+
+/* const paisLength = [];
+for (const pais of countries) {
+  if (pais.length === 4) {
+    paisLength.push(pais);
+  }
+}
+console.log(paisLength); */
+
+/* const paisLengthTwo = [];
+for (const pais of countries) {
+  if (pais.length >= 6) {
+    paisLengthTwo.push(pais);
+  }
+}
+console.log(paisLengthTwo); */
+
+/* const arrayReverse = countries.reverse();
+const paisReverse = [];
+for (const pais of arrayReverse) {
+  paisReverse.push(pais.toLocaleUpperCase());
+}
+console.log(paisReverse); */

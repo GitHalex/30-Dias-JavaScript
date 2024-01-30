@@ -11,9 +11,9 @@ for (let index = 0; index < numerosAleatorios; index++) {
 console.log(id); */
 
 /* let caracteres = "ABCDEFabcdef0123456789";
-#2
+
 let id = "#";
-for (let index = 0; index < 5; index++) {
+for (let index = 0; index < 6; index++) {
   let numeros = Math.floor(Math.random() * caracteres.length);
   id += caracteres[numeros];
 }
@@ -30,7 +30,7 @@ console.log(color);
 // Utilizar el color generado para pintar algún elemento en el documento
 document.body.style.backgroundColor = color; */
 
-const countries = [
+/* const countries = [
   "Albania",
   "Bolivia",
   "Canada",
@@ -42,7 +42,8 @@ const countries = [
   "Ireland",
   "Japan",
   "Kenya",
-];
+  "Iceland",
+]; */
 
 /* let mayusculas = [];
 for (let index = 0; index < countries.length; index++) {
@@ -58,23 +59,15 @@ for (let index = 0; index < countries.length; index++) {
 }
 console.log(tam); */
 
-/* let arreglo = [];
-let country = "";
-let mitad = "";
-let tam = 0;
-let arrayAux = [];
-for (let index = 0; index < countries.length; index++) {
-  for (let j = 0; j < countries.length; j++) {
-    country = countries[j];
-    arrayAux.push(country);
-    mitad = country.substring(2);
-    arrayAux.push(mitad);
-    tam = country.length;
-    arrayAux.push(tam);
-  }
-  arreglo.push(arrayAux);
+/* const resultArray = [];
+for (const country of countries) {
+  const countryCode = country.slice(0, 3).toLocaleUpperCase();
+  //   console.log(countryCode);
+  const countryLength = country.length;
+  //   console.log(countryLength);
+  resultArray.push([country, countryCode, countryLength]);
 }
-console.log(arreglo); */
+console.log(resultArray); */
 
 /* let element = "";
 let arreglo = [];
@@ -87,22 +80,17 @@ for (let index = 0; index < countries.length; index++) {
 }
 console.log(arreglo); */
 
-/* let element = "";
-let arrIA = [];
-let arreAxu = [];
-for (let index = 0; index < countries.length; index++) {
-  element = countries[index];
-  console.log(element);
-  if (element.includes("ia")) {
-    arrIA.push(element);
-  } else {
-    arreAxu.push(element);
-  }
+/* const arrayIa = [];
+const arrayNoIa = [];
+for (const country of countries) {
+  country.includes("ia") ? arrayIa.push(country) : arrayNoIa.push(country);
 }
-console.log(`paises con ia ${arrIA}`);
-console.log(`paises sin ia ${arreAxu}`); */
+console.log(typeof arrayIa);
+console.log(typeof arrayNoIa);
+console.log(arrayIa);
+console.log(arrayNoIa); */
 
-/* const countries = [
+const countries = [
   "Albania",
   "Bolivia",
   "Canada",
@@ -114,9 +102,9 @@ console.log(`paises sin ia ${arreAxu}`); */
   "Ireland",
   "Japan",
   "Kenya",
-]; */
+];
 
-/* let element = 0;
+let element = 0;
 let mayor = "";
 for (let index = 0; index < countries.length; index++) {
   if (element < countries[index].length) {
@@ -124,7 +112,17 @@ for (let index = 0; index < countries.length; index++) {
     mayor = countries[index];
   }
 }
-console.log(mayor); */
+// console.log(mayor);
+
+/* let elemento = 0;
+let mayorPais = "";
+for (const country of countries) {
+  if (elemento < country.length) {
+    elemento = country.length;
+    mayorPais = country;
+  }
+}
+console.log(mayorPais); */
 
 /* let aux = [];
 for (let i = 0; i < countries.length; i++) {
@@ -155,13 +153,12 @@ for (let i = 0; i < webTechs.length; i++) {
 console.log(mayorCadena); */
 
 //Este ejercicio no puedo hacer el resultado es un arreglo de arreglos [["HTML",4],["CSS",3]]
-/* let arr = [];
-let aux = [];
-let tam = 0;
-for (let i = 0; i < webTechs.length; i++) {
-  aux[i].push(arr.push(webTechs[i], webTechs[i].length));
+/* const arrayTech = [];
+for (const tech of webTechs) {
+  const techLegth = tech.length;
+  arrayTech.push([tech, techLegth]);
 }
-console.log(aux); */
+console.log(arrayTech); */
 
 /* const mernStack = ["MongoDB", "Express", "React", "Node"];
 let acronimo = "";
@@ -194,7 +191,7 @@ for (let index = size; index > -1; index--) {
   console.log(frutas);
 } */
 
-/* const fullStack = [
+const fullStack = [
   ["HTML", "CSS", "JS", "React"],
   ["Node", "Express", "MongoDB"],
 ];
@@ -204,4 +201,4 @@ for (let i = 0; i < fullStack.length; i++) {
   for (const stack of fullStack[i]) {
     console.log(stack);
   }
-} */
+}

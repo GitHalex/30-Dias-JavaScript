@@ -63,7 +63,7 @@ yearAhora >= 18
     ); */
 
 /* let numYear = parseInt(prompt("Ingrese el numero de años: "));
-console.log(`Viviste ${numYear * 365 * 24 * 60 * 60}`); */
+console.log(`Viviste ${numYear * 365 * 24 * 60 * 60} segundos`); */
 
 /* let now = new Date();
 console.log(
