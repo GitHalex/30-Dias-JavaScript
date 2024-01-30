@@ -121,3 +121,43 @@ console.log(usuariosConectados(users)); */
 };
 
 console.log(findDevMERN(users)); */
+
+// #4 Establezca su nombre en el objeto usuarios sin modificar el objeto usuarios original
+/* const copia = Object.assign({ hanyinson: { email: "cale@gmail.com" } }, users);
+console.log(copia);
+console.log(users); */
+
+// #5 Obtener todas las claves o propiedades del objeto usuarios
+/* const obtenerClaves = (users) => {
+  let claves = [];
+  for (const clave of Object.keys(users)) {
+    claves.push(clave);
+  }
+  return claves;
+};
+console.log(obtenerClaves(users)); */
+
+// #6 Obtener todos los valores del objeto usuarios
+/* const obtenerValores = (users) => {
+  const valores = [];
+  for (const valor of Object.values(users)) {
+    valores.push(valor);
+  }
+  return valores;
+};
+console.log(obtenerValores(users)); */
+
+const countries = [
+  "Albania",
+  "Bolivia",
+  "Canada",
+  "Denmark",
+  "Ethiopia",
+  "Finland",
+  "Germany",
+  "Hungary",
+  "Ireland",
+  "Japan",
+  "Kenya",
+];
+// #7 Utilice el objeto países para imprimir el nombre del país, la capital, la población y los idiomas.
