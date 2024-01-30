@@ -74,6 +74,7 @@ console.log(volumeOfRectPrism(3, 2, 4)); */
   return Math.PI * radio ** 2;
 }
 console.log(areaOfCircle(3)); */
+
 /* const areaOfCircle = (radio) => Math.PI * radio ** 2;
 console.log(areaOfCircle(3)); */
 
@@ -91,6 +92,7 @@ console.log(circumOfCircle(3)); */
   return density;
 }
 console.log(densitySustance(2, 3)); */
+
 /* const densitySustance = (mass, volume) => mass / volume;
 console.log(densitySustance(2, 3)); */
 
@@ -99,7 +101,8 @@ console.log(densitySustance(2, 3)); */
   return distance / time + " m/s";
 }
 console.log(`La velocidad es: ${velocity(10, 5)}`); */
-/* const velocity = (distance, time) => distance / time +s " m/s";
+
+/* const velocity = (distance, time) => distance / time + "  m/s";
 console.log(`La velocidad es: ${velocity(10, 5)}`); */
 
 //11.-El peso de una sustancia se calcula de la siguiente manera: weight = mass x gravity. Escribe una función weight que calcule el peso de una sustancia.
@@ -143,7 +146,7 @@ Obeso: IMC es 30 o más */
   }
   return `IMC: ${Math.floor(imc)} estas ${resultado}`;
 }
-console.log(calculateIMC(94, 1.65)); */
+console.log(calculateIMC(74, 1.6)); */
 
 //14.-Escribe una función llamada checkSeason, toma un parámetro de mes y retorna la estación: Otoño, Invierno, Primavera o Verano.
 /* const checkSeason = (mes = "febrero") => {
@@ -163,6 +166,7 @@ console.log(calculateIMC(94, 1.65)); */
 console.log(checkSeason("enero"));
 console.log(checkSeason("febrero"));
 console.log(checkSeason()); */
+
 //15.-Math.max retorna su argumento más grande. Escriba una función findMax que tome tres argumentos y devuelva su máximo sin usar el método Math.max.
 /* const findMax = (num1, num2, num3) => {
   let candidato = num1;
