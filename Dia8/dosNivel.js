@@ -66,9 +66,58 @@ const users = {
     points: 40,
   },
 };
-console.log(users.Alex.skills.length);
 
-const copyUsers = Object.assign({}, users);
-for (const skills of users["Alex"]) {
-  console.log(skills);
-}
+/* const encontrarPersonaConMasHabilidades = (users) => {
+  let maxSkills = 0;
+  let personaConMasHabilidades = null;
+  for (const [nombre, usuario] of Object.entries(users)) {
+    if (usuario.skills.length > maxSkills) {
+      maxSkills = usuario.skills.length;
+      personaConMasHabilidades = nombre;
+    }
+  }
+
+  return personaConMasHabilidades;
+};
+
+let nombreMoreSkills = encontrarPersonaConMasHabilidades(users);
+console.log(`La persona que tiene mas skills es ${nombreMoreSkills}`); */
+
+/* const usuariosConectados = (users) => {
+  let conectados = [];
+  let maspuntos = [];
+  let cantidadConectados = 0;
+  let puntos = 0;
+  for (const [nombre, usuario] of Object.entries(users)) {
+    if (usuario.isLoggedIn) {
+      conectados.push(nombre);
+      cantidadConectados++;
+    }
+    if (usuario.points >= 50) {
+      maspuntos.push(nombre);
+      puntos++;
+    }
+  }
+  return `usuarios conectados ${conectados.join(
+    ", "
+  )} : en total son :${cantidadConectados}\n usuarios que tienen mas de 50 puntos ${maspuntos.join(
+    ", "
+  )} cantidad ${puntos}`;
+};
+
+console.log(usuariosConectados(users)); */
+
+//Esta mierda no funciona
+/* const findDevMERN = (users) => {
+  let personasMern = [];
+  for (const [nombre, usuario] of Object.entries(users)) {
+    let habilidades = usuario.skills;
+    const letras = ["M", "E", "R", "N"];
+    if (letras.every((letra) => habilidades.includes(letra))) {
+      personasMern.push(nombre);
+    }
+  }
+  return personasMern;
+};
+
+console.log(findDevMERN(users)); */
