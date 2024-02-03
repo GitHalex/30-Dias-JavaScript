@@ -52,19 +52,19 @@ const products = [
   { product: "tea", price: "" },
 ];
 
-const priceOnly = products.filter((product) => product.price > 0);
-console.log(priceOnly);
+/* const priceOnly = products.filter((product) => product.price > 0);
+console.log(priceOnly); */
 
 /* console.log(numbers);
 const sumaNumbers = numbers.reduce((acc, cur) => acc + cur, 0);
 console.log(sumaNumbers); */
 
-/* console.log(countries);
+console.log(countries);
 
-const stringsCountries = countries.reduce((acc, cur) => acc + ", " + cur);
-console.log(stringsCountries); */
+/* const stringsCountries = countries.reduce((acc, cur) => acc + ", " + cur);
+console.log(`${stringsCountries} Son los paises del norte de Europa`);
+ */
 
-console.log(names);
 /* const lengthName = names.some((name) => name.length > 7);
 console.log(lengthName); */
 
@@ -81,8 +81,5 @@ console.log(findCountry);
 console.log(possCountry); */
 
 /* console.log(countries);
-const possNorwey = countries.findIndex((poss) => poss == "Norway");
+const possNorwey = countries.findIndex((poss) => poss === "Norway");
 console.log(possNorwey); */
-
-const arreglo1 = [10, 20, 30, 40, 50];
-console.log(arreglo1.includes(10, 0));
