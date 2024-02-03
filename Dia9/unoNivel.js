@@ -8,15 +8,16 @@ const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 function cubo(callback, n) {
   return callback(n) + 3;
 }
-console.log(cubo(callback, 4)); */
+console.log(cubo(callback, 4));  */
 
 /* countries.forEach((pais) => console.log(pais));
 names.forEach((name) => console.log(name));
 numbers.forEach((number) => console.log(number)); */
-const mayusculasCountry = countries.map((countri) =>
+
+/* const mayusculasCountry = countries.map((countri) =>
   countri.toLocaleUpperCase()
 );
-console.log(mayusculasCountry);
+console.log(mayusculasCountry); */
 
 /* const arrayTam = countries.map((countri) => countri.length);
 console.log(arrayTam); */
@@ -51,9 +52,8 @@ const products = [
   { product: "tea", price: "" },
 ];
 
-/* const priceOnly = products.filter((product) => product.price > 0);
+const priceOnly = products.filter((product) => product.price > 0);
 console.log(priceOnly);
- */
 
 /* console.log(numbers);
 const sumaNumbers = numbers.reduce((acc, cur) => acc + cur, 0);
@@ -83,3 +83,6 @@ console.log(possCountry); */
 /* console.log(countries);
 const possNorwey = countries.findIndex((poss) => poss == "Norway");
 console.log(possNorwey); */
+
+const arreglo1 = [10, 20, 30, 40, 50];
+console.log(arreglo1.includes(10, 0));
