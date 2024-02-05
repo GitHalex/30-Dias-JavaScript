@@ -86,19 +86,45 @@ const startingLetters = countStartingLetters(countries);
 console.log(startingLetters); */
 
 // #5 Declara una función getFirstTenCountries y retorna un array de diez países. Utiliza diferente programación funcional para trabajar en el array countries.js.
-
-const getFirstTenCountries = () => {
+/* const getFirstTenCountries = () => {
   return countries.slice(0, 10);
 };
 const first = getFirstTenCountries();
-console.log(first);
+console.log(first); */
 
 // #6 Declara una función getLastTenCountries que devuelve los últimos diez países del array de países.
-const getLastTenCountries = () => {
+/* const getLastTenCountries = () => {
   let reverse = countries.reverse();
   const revertido = reverse.slice(0, 10);
   console.log(revertido);
 };
-getLastTenCountries();
+getLastTenCountries(); */
 
 // #7 Encuentre qué letra se utiliza muchas veces como inicial de un nombre de país del array de países (ej. Finland, Fiji, France etc)
+// Inicializar un objeto para contar las letras iniciales
+const startingLettersCount = {};
+
+// Recorrer la lista de países
+for (const country of countries) {
+  // Obtener la primera letra del país (convertida a mayúscula para evitar distinción entre mayúsculas y minúsculas)
+  const firstLetter = country.charAt(0).toUpperCase();
+
+  // Verificar si la letra ya está en el objeto startingLettersCount
+  if (startingLettersCount[firstLetter]) {
+    startingLettersCount[firstLetter]++;
+  } else {
+    startingLettersCount[firstLetter] = 1;
+  }
+}
+
+// Convierte el objeto en un array de objetos
+const result = Object.entries(startingLettersCount).map(([letter, count]) => ({
+  letter,
+  count,
+}));
+
+// Ordena el resultado por la cantidad de veces que se utiliza la letra
+result.sort((a, b) => b.count - a.count);
+
+// Imprime el resultado
+console.log(result);
