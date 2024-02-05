@@ -1,4 +1,5 @@
-const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
+// const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
+const countries = require("../countries.js");
 const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const products = [
@@ -53,9 +54,51 @@ const countriesWithIs = categorizeCountries("en");
 console.log(countriesWithIs); */
 
 // #4 Cree una función que retorne un array de objetos, que es la letra y el número de veces que la letra usa para empezar el nombre de un país.
+// const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
+
+/* const countStartingLetters = (countries) => {
+  const startingLettersCount = {};
+
+  for (const country of countries) {
+    const firstLetter = country[0].toUpperCase();
+
+    // Verifica si la letra ya está en el objeto startingLettersCount
+    if (startingLettersCount[firstLetter]) {
+      startingLettersCount[firstLetter]++;
+    } else {
+      startingLettersCount[firstLetter] = 1;
+    }
+  }
+
+  // Convierte el objeto en un array de objetos
+  const result = Object.entries(startingLettersCount).map(
+    ([letter, count]) => ({
+      letter,
+      count,
+    })
+  );
+
+  return result;
+};
+
+// Ejemplo de uso
+const startingLetters = countStartingLetters(countries);
+console.log(startingLetters); */
 
 // #5 Declara una función getFirstTenCountries y retorna un array de diez países. Utiliza diferente programación funcional para trabajar en el array countries.js.
 
+const getFirstTenCountries = () => {
+  return countries.slice(0, 10);
+};
+const first = getFirstTenCountries();
+console.log(first);
+
 // #6 Declara una función getLastTenCountries que devuelve los últimos diez países del array de países.
+const getLastTenCountries = () => {
+  let reverse = countries.reverse();
+  const revertido = reverse.slice(0, 10);
+  console.log(revertido);
+};
+getLastTenCountries();
 
 // #7 Encuentre qué letra se utiliza muchas veces como inicial de un nombre de país del array de países (ej. Finland, Fiji, France etc)
