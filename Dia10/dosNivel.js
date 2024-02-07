@@ -10,3 +10,7 @@ let B = new Set(b);
 let intersection = a.filter((num) => B.has(num));
 let inter = new Set(intersection);
 console.log(inter);
+
+let diferencia = a.filter((numero) => !B.has(numero));
+let DIF = new Set(diferencia);
+console.log(DIF);
