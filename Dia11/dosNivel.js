@@ -42,3 +42,11 @@ const users = [
     age: 20,
   },
 ];
+
+console.log(users);
+
+for (const { name, scores, skills, age } of users) {
+  if (skills.length <= 2) {
+    console.log(`nombre: ${name} habilidades ${skills}`);
+  }
+}
