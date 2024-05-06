@@ -9,8 +9,8 @@ console.log(
 let numero = "10";
 console.log(typeof numero);
 console.log(numero === 10);
-let numeroEntero = parseInt(numero);
-console.log(numeroEntero == 10);
+let numeroEntero = +numero;
+console.log(numeroEntero === 10);
 let numeroFloat = "9.8";
 console.log(Math.ceil(numeroFloat) == parseInt(numero));
 let cadena = "Python";

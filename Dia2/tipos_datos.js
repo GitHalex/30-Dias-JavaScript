@@ -1,6 +1,10 @@
 // NIVEL 1
 let desafio = "30 Dias de JavaScript";
 
+let a = 2;
+let b = 3;
+console.log(`${a} es mayor que ${b}: ${a > b ? "a Es mayor" : "b es Mayor"}`);
+
 console.log(desafio);
 console.log(desafio.length);
 console.log(desafio.toUpperCase());
