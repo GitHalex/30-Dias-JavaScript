@@ -1,4 +1,4 @@
-/* function obtenerDiasEnMes(mes) {
+function obtenerDiasEnMes(mes) {
   const mesesCon31Dias = [
     "enero",
     "marzo",
@@ -34,14 +34,4 @@ if (diasEnMes === -1) {
   console.log("Mes no válido. Por favor, introduce un mes válido.");
 } else {
   console.log(`${mesUsuario} tiene ${diasEnMes} días.`);
-} */
-
-function tabla5() {
-  const tabla = [];
-  for (let i = 1; i <= 10; i++) {
-    tabla.push(5 * i);
-  }
-  console.log(tabla);
 }
-
-tabla5();
