@@ -5,6 +5,7 @@ let city = "Cochabamba";
 let age = 28;
 let isMarried = false;
 let year = 1994;
+
 console.log(typeof firstName);
 console.log(typeof lastName);
 console.log(typeof country);

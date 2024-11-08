@@ -67,7 +67,7 @@ const users = {
   },
 };
 
-/* const encontrarPersonaConMasHabilidades = (users) => {
+const encontrarPersonaConMasHabilidades = (users) => {
   let maxSkills = 0;
   let personaConMasHabilidades = null;
   for (const [nombre, usuario] of Object.entries(users)) {
@@ -81,7 +81,7 @@ const users = {
 };
 
 let nombreMoreSkills = encontrarPersonaConMasHabilidades(users);
-console.log(`La persona que tiene mas skills es ${nombreMoreSkills}`); */
+console.log(`La persona que tiene mas skills es ${nombreMoreSkills}`);
 
 /* const usuariosConectados = (users) => {
   let conectados = [];
