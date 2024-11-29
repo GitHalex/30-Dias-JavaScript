@@ -1,9 +1,9 @@
-/* let text =
+let text =
   "I love teaching and empowering people I teach HTML CSS JS React, Python";
 let arreglo = text.split(" ");
 console.log(arreglo);
 let tamarreglo = arreglo.length;
-console.log(tamarreglo); */
+console.log(tamarreglo);
 
 /* const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
 shoppingCart.unshift("Meat");

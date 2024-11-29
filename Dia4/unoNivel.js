@@ -1,8 +1,7 @@
-/* let edad = prompt("Ingrese su edad: ");
+let edad = prompt("Ingrese su edad: ");
 edad >= 18
   ? console.log("tiene la edad suficiente para conducir. ")
   : console.log(`Te faltan ${18 - edad} años para conducir`);
- */
 
 /* let miEdad = prompt("Ingresar mi edad: ");
 let tuEdad = prompt("Ingresa tu edad: ");

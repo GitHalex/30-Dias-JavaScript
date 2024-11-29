@@ -100,5 +100,3 @@ console.log(itCompanies);
 console.log(itCompanies.splice(2, 3, 3));
 console.log(itCompanies.pop());
 console.log(itCompanies.splice()); */
-
-
