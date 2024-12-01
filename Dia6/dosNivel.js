@@ -59,37 +59,6 @@ for (let index = 0; index < countries.length; index++) {
 }
 console.log(tam); */
 
-/* const resultArray = [];
-for (const country of countries) {
-  const countryCode = country.slice(0, 3).toLocaleUpperCase();
-  //   console.log(countryCode);
-  const countryLength = country.length;
-  //   console.log(countryLength);
-  resultArray.push([country, countryCode, countryLength]);
-}
-console.log(resultArray); */
-
-/* let element = "";
-let arreglo = [];
-for (let index = 0; index < countries.length; index++) {
-  element = countries[index];
-  console.log(element);
-  if (element.includes("land")) {
-    arreglo.push(element);
-  }
-}
-console.log(arreglo); */
-
-/* const arrayIa = [];
-const arrayNoIa = [];
-for (const country of countries) {
-  country.includes("ia") ? arrayIa.push(country) : arrayNoIa.push(country);
-}
-console.log(typeof arrayIa);
-console.log(typeof arrayNoIa);
-console.log(arrayIa);
-console.log(arrayNoIa); */
-
 const countries = [
   "Albania",
   "Bolivia",
@@ -103,6 +72,37 @@ const countries = [
   "Japan",
   "Kenya",
 ];
+
+const resultArray = [];
+for (const country of countries) {
+  const countryCode = country.slice(0, 3).toLocaleUpperCase();
+  //   console.log(countryCode);
+  const countryLength = country.length;
+  //   console.log(countryLength);
+  resultArray.push([country, countryCode, countryLength]);
+}
+console.log(resultArray);
+
+/* let element = "";
+let arreglo = [];
+for (let index = 0; index < countries.length; index++) {
+  element = countries[index];
+  console.log(element);
+  if (element.includes("land")) {
+    arreglo.push(element);
+  }
+}
+console.log(arreglo); */
+
+const arrayIa = [];
+const arrayNoIa = [];
+for (const country of countries) {
+  country.includes("ia") ? arrayIa.push(country) : arrayNoIa.push(country);
+}
+console.log(typeof arrayIa);
+console.log(typeof arrayNoIa);
+console.log(arrayIa);
+console.log(arrayNoIa);
 
 let element = 0;
 let mayor = "";
@@ -152,21 +152,21 @@ for (let i = 0; i < webTechs.length; i++) {
 }
 console.log(mayorCadena); */
 
-//Este ejercicio no puedo hacer el resultado es un arreglo de arreglos [["HTML",4],["CSS",3]]
-/* const arrayTech = [];
+//Este ejercicio si puedo hacer el resultado es un arreglo de arreglos [["HTML",4],["CSS",3]]
+const arrayTech = [];
 for (const tech of webTechs) {
   const techLegth = tech.length;
   arrayTech.push([tech, techLegth]);
 }
-console.log(arrayTech); */
+console.log(arrayTech);
 
-/* const mernStack = ["MongoDB", "Express", "React", "Node"];
+const mernStack = ["MongoDB", "Express", "React", "Node"];
 let acronimo = "";
 for (let i = 0; i < mernStack.length; i++) {
   const element = mernStack[i];
   acronimo += element[0];
 }
-console.log(acronimo); */
+console.log(acronimo);
 
 /* const technologies = [
   "HTML",
