@@ -87,7 +87,7 @@ for (let num = 0; num < 5; num++) {
 }
 console.log(ale);
 
-/* const character =
+const character =
   "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz123456789";
 let id = "";
 let i = 0;
@@ -97,4 +97,4 @@ while (i <= 5) {
   id += character[numeros];
   i += 1;
 }
-console.log(id); */
+console.log(id);

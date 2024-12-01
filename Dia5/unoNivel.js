@@ -65,10 +65,10 @@ for (let i = 0; i < itCompanies.length; i++) {
   console.log(itCompanies[i]);
 } */
 
-// for (let i = 0; i < itCompanies.length; i++) {
-//   let nuevoIt = itCompanies[i];
-//   console.log(nuevoIt.toUpperCase());
-// }
+for (let i = 0; i < itCompanies.length; i++) {
+  let nuevoIt = itCompanies[i];
+  console.log(nuevoIt.toUpperCase());
+}
 
 // console.log(`${itCompanies.join(", ")} son grandes empresas de TI`);
 
