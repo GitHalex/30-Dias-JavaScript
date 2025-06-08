@@ -6,6 +6,7 @@ let b = 3;
 console.log(`${a} es mayor que ${b}: ${a > b ? "a Es mayor" : "b es Mayor"}`);
 
 console.log(desafio);
+
 console.log(desafio.length);
 console.log(desafio.toUpperCase());
 console.log(desafio.toLowerCase());
