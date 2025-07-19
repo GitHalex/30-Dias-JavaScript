@@ -4,16 +4,11 @@ let desafio = "30 Dias de JavaScript retomando";
 let a = 2;
 let b = 3;
 console.log(`${a} es mayor que ${b}: ${a > b ? "a Es mayor" : "b es Mayor"}`);
-
-// Imprima la cadena en la consola del navegador usando console.log()
 console.log(desafio);
-// Imprima la longitud de la cadena en la consola del navegador usando console.log()
+
 console.log(desafio.length);
-// Cambie todos los caracteres de cadena a letras mayúsculas usando el método toUpperCase()
 console.log(desafio.toUpperCase());
-// Cambie todos los caracteres de la cadena a letras minúsculas usando el método toLowerCase()
 console.log(desafio.toLowerCase());
-// Corta (segmenta) la primera palabra de la cadena usando el método substr() o substring()
 console.log(desafio.substring(0));
 console.log(desafio.substring(3));
 // Corta la frase Days Of JavaScript de 30 Days Of JavaScript.
