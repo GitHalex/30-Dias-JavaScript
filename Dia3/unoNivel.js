@@ -1,10 +1,12 @@
-/* let firstName = "Alex";
+let firstName = "Alex";
 let lastName = "Calcina";
 let country = "Bolivia";
 let city = "Cochabamba";
 let age = 28;
 let isMarried = false;
 let year = 1994;
+let pii = Math.PI;
+console.log(pii);
 
 console.log(typeof firstName);
 console.log(typeof lastName);
@@ -18,9 +20,9 @@ console.log(typeof "10");
 console.log(typeof 10);
 
 console.log(typeof "10" == 10);
-console.log(typeof parseInt("9.8") == 10); */
+console.log(typeof parseInt("9.8") == 10);
 
-/* console.log(4 > 3);
+console.log(4 > 3);
 console.log(4 >= 3);
 console.log(4 < 3);
 console.log(4 <= 3);
@@ -30,7 +32,7 @@ console.log(4 != 4);
 console.log(4 !== 4);
 console.log(4 != "4");
 console.log(4 !== "4");
-console.log(4 === "4"); */
+console.log(4 === "4");
 
 /* let tamPython = "Python";
 let tamjargon = "jargon";
@@ -52,7 +54,7 @@ let name2 = "python";
 console.log(!name1.endsWith("on"));
 console.log(!name2.endsWith("on")); */
 
-/* let now = new Date();
+let now = new Date();
 console.log(now);
 console.log(`el año es: ${now.getFullYear()}`);
 console.log(`el mes es: ${now.getMonth() + 1}`);
@@ -66,4 +68,3 @@ const allSeconds = Date.now();
 console.log(
   `${allSeconds} de segundos transcurridos desde el 1 de enero de 1977`
 );
- */
