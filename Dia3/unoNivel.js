@@ -36,7 +36,7 @@ console.log(4 === "4");
 
 let tamPython = "Python";
 let tamjargon = "jargon";
-console.log(tamPython.length != tamjargon.length); 
+console.log(tamPython.length != tamjargon.length);
 
 console.log(4 > 3 && 10 < 12);
 console.log(4 > 3 && 10 > 12);
@@ -49,7 +49,7 @@ console.log(!(4 > 3 && 10 < 12));
 console.log(!(4 > 3 && 10 > 12));
 console.log(!(4 === "4"));
 
-/* let name1 = "dragon";
+let name1 = "dragon";
 let name2 = "python";
 console.log(!name1.endsWith("on"));
 console.log(!name2.endsWith("on"));
