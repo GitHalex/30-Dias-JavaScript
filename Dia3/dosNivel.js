@@ -1,16 +1,12 @@
-/* let base = parseInt(prompt("Ingrese base: "));
+let base = parseInt(prompt("Ingrese base: "));
 let altura = parseInt(prompt("Ingrese altura: "));
-console.log(`El area del triangulo es: ${0.5 * base * altura}`); */
+console.log(`El area del triangulo es: ${0.5 * base * altura}`);
 
-/* let a = parseInt(prompt("Ingrese lado a: "));
+let a = parseInt(prompt("Ingrese lado a: "));
 let b = parseInt(prompt("Ingrese lado b: "));
 let c = parseInt(prompt("Ingrese lado c: "));
 let perimetro = a + b + c;
-console.log(`el perimetro del triangulo es: ${perimetro}`); */
-
-/* let largo = parseInt(prompt("Largo"));
-let ancho = parseInt(prompt("Ancho"));
-console.log(`perimetro: ${2 * (largo + ancho)}`); */
+console.log(`el perimetro del triangulo es: ${perimetro}`);
 
 /* const PI = 3.14;
 let radio = parseInt(prompt("Radio: "));
