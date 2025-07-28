@@ -1,6 +1,6 @@
 let base = parseInt(prompt("Ingrese base: "));
 let altura = parseInt(prompt("Ingrese altura: "));
-console.log(`El area del triangulo es: ${0.5 * base * altura}`);
+console.log(`El area del triangulo es: ${(base * altura) / 2}`);
 
 let a = parseInt(prompt("Ingrese lado a: "));
 let b = parseInt(prompt("Ingrese lado b: "));
@@ -29,7 +29,7 @@ let tarifa = parseInt(prompt("Introduce la tarifa por hora: "));
 console.log(`Su ganancia semanal es ${horas * tarifa}`);
  */
 
-/* let nombre = prompt("Ingrese su nombre: ");
+let nombre = prompt("Ingrese su nombre: ");
 let apellido = prompt("Ingrese su apellido: ");
 nombre.length > apellido.length
   ? console.log(
@@ -38,7 +38,6 @@ nombre.length > apellido.length
   : console.log(
       `Tu apellido ${apellido}, es mas largo que tu nombre ${nombre}`
     );
- */
 
 /* let myAge = 250;
 let yourAge = 25;
