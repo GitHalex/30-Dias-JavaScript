@@ -44,7 +44,7 @@ let yourAge = 25;
 console.log(`Soy ${myAge - yourAge} mayor que tú`);
  */
 
-/* let year = parseInt(prompt("Introduzca el año de nacimiento: "));
+let year = parseInt(prompt("Introduzca el año de nacimiento: "));
 let now = new Date();
 let yearAhora = now.getFullYear() - year;
 yearAhora >= 18
@@ -54,8 +54,8 @@ yearAhora >= 18
   : console.log(
       `Tienes ${yearAhora} años. Podras conducir despues de ${
         18 - yearAhora
-      } años20`
-    ); */
+      } años`
+    );
 
 /* let numYear = parseInt(prompt("Ingrese el numero de años: "));
 console.log(`Viviste ${numYear * 365 * 24 * 60 * 60} segundos`); */
