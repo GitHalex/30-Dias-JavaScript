@@ -72,12 +72,12 @@ for (let i = 0; i < itCompanies.length; i++) {
 
 // console.log(`${itCompanies.join(", ")} son grandes empresas de TI`);
 
-let empresa = prompt("Ingrese una empresa: ");
+/* let empresa = prompt("Ingrese una empresa: ");
 let existe = itCompanies.includes(empresa);
 
 existe
   ? console.log(`${empresaAma} existe hola`)
-  : console.log(`La empresa no existe`);
+  : console.log(`La empresa no existe`); */
 
 for (let i = 0; i < itCompanies.length; i++) {
   console.log(itCompanies[i]);
@@ -99,3 +99,12 @@ console.log(itCompanies);
 console.log(itCompanies.splice(2, 3, 3));
 console.log(itCompanies.pop());
 console.log(itCompanies.splice());
+
+const perro = {
+  nombre: "Kenai",
+  ladrar() {
+    console.log(this);
+  },
+};
+
+perro.ladrar();
