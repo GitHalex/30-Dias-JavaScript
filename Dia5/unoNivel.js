@@ -26,8 +26,12 @@ let vacio = [];
 console.log(vacio);
 
 const numbers = [1, 2, 3, 4, 5];
+const numbers_segundo = [6, 7, 8, 9, 10];
 console.log(numbers);
 console.log(numbers.length);
+const operador = [...numbers, ...numbers_segundo];
+console.log(operador);
+console.log(numbers.concat(numbers_segundo));
 
 console.log(
   `el primer elemento ${numbers[0]} - el elemento del medio ${numbers[2]} - el ultimo elemento ${numbers[4]}`
@@ -70,21 +74,23 @@ for (let i = 0; i < itCompanies.length; i++) {
   console.log(nuevoIt.toUpperCase());
 }
 
-// console.log(`${itCompanies.join(", ")} son grandes empresas de TI`);
+console.log(`${itCompanies.join(", ")} son grandes empresas de TI`);
 
 /* let empresa = prompt("Ingrese una empresa: ");
 let existe = itCompanies.includes(empresa);
 
 existe
-  ? console.log(`${empresaAma} existe hola`)
+  ? console.log(`${empresaAma} si existe`)
   : console.log(`La empresa no existe`); */
 
 for (let i = 0; i < itCompanies.length; i++) {
   console.log(itCompanies[i]);
+  let tiene_o = 0;
   if (itCompanies[i].includes("o")) {
-    console.log("si");
-  } else {
-    console.log("no");
+    tiene_o += 1;
+    if (tiene_o > 1) {
+      console.log(itCompanies[i], "EXISTE");
+    }
   }
 }
 
