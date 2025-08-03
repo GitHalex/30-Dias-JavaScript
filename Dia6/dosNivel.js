@@ -1,5 +1,5 @@
-/* let caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz123456789";
-console.log(caracteres);
+let caracteres = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuwxyz123456789";
+console.log(caracteres.length);
 let numerosAleatorios = Math.floor(Math.random() * 100);
 console.log(numerosAleatorios);
 console.log(typeof numerosAleatorios);
@@ -8,16 +8,16 @@ for (let index = 0; index < numerosAleatorios; index++) {
   let numeros = Math.floor(Math.random() * caracteres.length);
   id += caracteres[numeros];
 }
-console.log(id); */
+console.log(id);
 
-/* let caracteres = "ABCDEFabcdef0123456789";
+let character = "ABCDEFabcdef0123456789";
 
-let id = "#";
+let char = "#";
 for (let index = 0; index < 6; index++) {
   let numeros = Math.floor(Math.random() * caracteres.length);
-  id += caracteres[numeros];
+  char += caracteres[numeros];
 }
-console.log(id); */
+console.log(char);
 
 // Generar un número aleatorio entre 0 y 255 para cada componente de color
 /* let red = Math.floor(Math.random() * 256);
@@ -83,16 +83,16 @@ for (const country of countries) {
 }
 console.log(resultArray);
 
-/* let element = "";
+let elementos = "";
 let arreglo = [];
 for (let index = 0; index < countries.length; index++) {
-  element = countries[index];
-  console.log(element);
-  if (element.includes("land")) {
-    arreglo.push(element);
+  elementos = countries[index];
+  console.log(elementos);
+  if (elementos.includes("land")) {
+    arreglo.push(elementos);
   }
 }
-console.log(arreglo); */
+console.log(arreglo);
 
 const arrayIa = [];
 const arrayNoIa = [];
