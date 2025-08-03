@@ -2,10 +2,10 @@
 for (let i = 0; i < numbers.length; i++) {
   console.log(i);
 }
-let i = 0;
-while (i <= 10) {
-  console.log(i);
-  i++;
+let indice = 0;
+while (indice <= 10) {
+  console.log(indice);
+  indice++;
 }
 let num = 0;
 do {
@@ -13,19 +13,19 @@ do {
   num++;
 } while (num <= 10); */
 
-/* const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 let tam = numbers.length;
-console.log(tam); */
+console.log(tam);
 
-/* for (let index = tam; index > -1; index--) {
-  console.log(numbers[index]);
-} */
+for (let index = tam - 1; index >= 0; index--) {
+  console.log(`valor ${numbers[index]}`);
+}
 
-/* let i = tam;
+let indice = tam - 1;
 do {
-  console.log(numbers[i]);
-  i--;
-} while (i > -1); */
+  console.log(numbers[indice]);
+  indice--;
+} while (indice >= 0);
 
 /* let n = parseInt(prompt("Ingrese un numero: "));
 for (let index = 0; index <= n; index++) {
@@ -43,39 +43,53 @@ for (let index = 0; index <= numero; index++) {
 /* for (let i = 0; i <= 10; i++) {
   console.log(`${i} x ${i} = ${i * i}`);
 } */
-/* for (let i = 0; i <= 10; i++) {
-  console.log(`${i}\t${i ** 2}\t${i ** 3}`);
-} */
 
-/* for (let index = 0; index <= 100; index++) {
-  index % 2 == 0 ? console.log(index) : console.log();
-} */
+for (let i = 0; i <= 10; i++) {
+  console.log(`${i}\t${i ** 2}\t${i ** 3}`);
+}
+
+for (let index = 0; index <= 100; index++) {
+  if (index % 2 == 0) {
+    console.log(index);
+  }
+}
 /* for (let index = 0; index <= 100; index++) {
   index % 2 != 0 ? console.log(index) : console.log();
 } */
 
-/* let sumPar = 0;
+for (let num = 2; num <= 100; num++) {
+  let esPrimo = true;
+
+  for (let i = 2; i <= Math.sqrt(num); i++) {
+    if (num % i === 0) {
+      esPrimo = false;
+      break;
+    }
+  }
+
+  if (esPrimo) {
+    console.log(num);
+  }
+}
+
+let sumPar = 0;
 let sumImpar = 0;
 for (let i = 0; i <= 100; i++) {
-  if (i % 2 == 0) {
-    sumPar += i;
-  } else {
-    sumImpar += i;
-  }
+  i % 2 == 0 ? (sumPar += i) : (sumImpar += i);
 }
 console.log(
   `La suma de todos los pares de 0 a 100 es: ${sumPar}. Y la suma de todo los impares de 0 a 100 es ${sumImpar}`
-); */
+);
 
 /* let arr = [sumPar, sumImpar];
 console.log(arr);
  */
 
-/* let al = [];
+let al = [];
 for (let num = 0; num < 5; num++) {
   al.push(Math.floor(Math.random() * 100));
 }
-console.log(al); */
+console.log(al);
 
 let ale = [];
 for (let num = 0; num < 5; num++) {
@@ -83,6 +97,8 @@ for (let num = 0; num < 5; num++) {
   console.log(elemento);
   if (ale.indexOf(elemento) === -1) {
     ale.push(elemento);
+  } else {
+    num -= 1;
   }
 }
 console.log(ale);
@@ -98,3 +114,4 @@ while (i <= 5) {
   i += 1;
 }
 console.log(id);
+console.log(typeof id);
