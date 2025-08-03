@@ -5,7 +5,7 @@ console.log(arreglo);
 let tamarreglo = arreglo.length;
 console.log(tamarreglo);
 
-/* const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
+const shoppingCart = ["Milk", "Coffee", "Tea", "Honey"];
 shoppingCart.unshift("Meat");
 console.log(shoppingCart);
 shoppingCart.push("Sugar");
@@ -17,7 +17,7 @@ if (shoppingCart.includes("Honey")) {
 }
 console.log(shoppingCart);
 shoppingCart[3] = "Green Tea";
-console.log(shoppingCart); */
+console.log(shoppingCart);
 
 /* const countries = [
   "Albania",

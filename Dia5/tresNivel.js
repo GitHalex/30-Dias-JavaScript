@@ -1,4 +1,6 @@
-/* const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+const ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+console.log(`ordenado el arreglo => ${ages.sort()}`);
+
 console.log(`Min: ${Math.min(...ages)}`);
 console.log(`Max: ${Math.max(...ages)}`);
 let tam = ages.length;
@@ -8,14 +10,14 @@ for (let i of ages) {
   suma += i;
 }
 
-/* let promedio = suma / ages.length;
+let promedio = suma / ages.length;
 console.log(`Edad promedio ${promedio}`);
 let min = Math.min(...ages);
 let max = Math.max(...ages);
 console.log(`${Math.abs(min - promedio)}`);
-console.log(`${Math.abs(max - promedio)}`); */
+console.log(`${Math.abs(max - promedio)}`);
 
-/* const countries = [
+const countries = [
   "Afghanistan",
   "Albania",
   "Algeria",
@@ -225,4 +227,8 @@ if (medio % 2 == 0) {
   partir = countries.slice(0, medio);
 }
 
-console.log(partir); */
+console.log(partir);
+
+for (let i = 0; i < countries.length; i++) {
+  console.log("Nose entiende la pregunta");
+}
