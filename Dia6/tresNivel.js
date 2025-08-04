@@ -218,15 +218,15 @@ mernStack.sort();
 console.log(webTechs);
 console.log(mernStack); */
 
-/* const paisLand = [];
+const paisLand = [];
 for (const pais of countries) {
   if (pais.includes("land")) {
     paisLand.push(pais);
   }
 }
-console.log(paisLand); */
+console.log(paisLand);
 
-/* let elemento = 0;
+let elemento = 0;
 let mayorPais = "";
 for (const country of countries) {
   if (elemento < country.length) {
@@ -234,27 +234,27 @@ for (const country of countries) {
     mayorPais = country;
   }
 }
-console.log(mayorPais); */
+console.log(mayorPais);
 
-/* const paisLength = [];
+const paisLength = [];
 for (const pais of countries) {
   if (pais.length === 4) {
     paisLength.push(pais);
   }
 }
-console.log(paisLength); */
+console.log(paisLength);
 
-/* const paisLengthTwo = [];
+const paisLengthTwo = [];
 for (const pais of countries) {
-  if (pais.length >= 6) {
+  if (pais.includes(" ")) {
     paisLengthTwo.push(pais);
   }
 }
-console.log(paisLengthTwo); */
+console.log(paisLengthTwo);
 
-/* const arrayReverse = countries.reverse();
+const arrayReverse = countries.reverse();
 const paisReverse = [];
 for (const pais of arrayReverse) {
   paisReverse.push(pais.toLocaleUpperCase());
 }
-console.log(paisReverse); */
+console.log(paisReverse);
