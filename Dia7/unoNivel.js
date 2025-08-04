@@ -1,11 +1,10 @@
 // 1.- Declare una función fullName e imprima su nombre completo.
-
 /* function fullName() {
   let name = "Alex Hanyinson";
   let apellido = "Calcina Bernal";
   console.log(`${name} ${apellido}`);
 }
-console.log(fullName()); */
+fullName(); */
 
 /* const nombre = () => {
   let name = "Alex";
