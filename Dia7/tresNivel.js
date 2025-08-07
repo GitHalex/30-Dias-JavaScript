@@ -12,7 +12,7 @@
       let caracter = Math.floor(Math.random() * caracteres.length);
       id += caracteres[caracter];
     }
-    ids += id + "\n"
+    ids += id + "\n";
   }
   return ids;
 };
@@ -29,7 +29,7 @@ console.log(userIdGeneratorByUser()); */
 console.log(rgbColorGenerator()); */
 
 // #3 Escriba una función arrayOfHexaColors que retorna cualquier cantidad de colores hexadecimales en un array.
-/* const arrayOfHexaColors = () => {
+const arrayOfHexaColors = () => {
   const arrayHex = [];
   const caracteres = "abcdef0123456789";
   const cantidad = Math.floor(Math.random() * 10) + 1;
@@ -43,10 +43,10 @@ console.log(rgbColorGenerator()); */
   }
   return arrayHex;
 };
-console.log(arrayOfHexaColors()); */
+console.log(arrayOfHexaColors());
 
 // #4 Escriba una función arrayOfRgbColors que retorna cualquier cantidad de colores RGB en un array.
-/* const arrayOfRgbColors = () => {
+const arrayOfRgbColors = () => {
   const arrayColors = [];
 
   let cantidadDeRgb = Math.floor(Math.random() * 10) + 1;
@@ -59,10 +59,11 @@ console.log(arrayOfHexaColors()); */
   }
   return arrayColors;
 };
-console.log(arrayOfRgbColors()); */
+
+console.log(arrayOfRgbColors());
 
 // #5 Escriba una función convertHexaToRgb que convierta el color hexa a rgb y retorna un color rgb.
-/* const convertHexaToRgb = (hexColor) => {
+const convertHexaToRgb = (hexColor) => {
   // Elimina el "#" si está presente
   hexColor = hexColor.replace(/^#/, "");
   // Convierte el color hexadecimal a valores RGB
@@ -72,10 +73,10 @@ console.log(arrayOfRgbColors()); */
   return `rgb(${r}, ${g}, ${b})`;
 };
 const hexColor = "#1a2b4f";
-console.log(convertHexaToRgb(hexColor)); */
+console.log(convertHexaToRgb(hexColor));
 
 // #6 Escriba una función convertRgbToHexa que convierta rgb a color hexa y retorna un color hexa.
-/* const convertRgbToHexa = (rgbColor) => {
+const convertRgbToHexa = (rgbColor) => {
   // Extrae los valores R, G y B del formato RGB
   const match = rgbColor.match(/^rgb\((\d+),\s*(\d+),\s*(\d+)\)$/);
 
@@ -95,12 +96,12 @@ console.log(convertHexaToRgb(hexColor)); */
   return "#" + hexColor;
 };
 const rgbColor = "rgb(26, 43, 60)";
-console.log(convertRgbToHexa(rgbColor)); */
+console.log(convertRgbToHexa(rgbColor));
 
 // #7 Escriba una función generateColors que pueda generar cualquier número de colores hexa o rgb.
 
 // #8 Llame a su función shuffleArray, toma un array como parámetro y devuelve un array mezclada
-/* const shuffleArray = (array) => {
+const shuffleArray = (array) => {
   const shuffledArray = [...array];
 
   for (let i = shuffledArray.length - 1; i > 0; i--) {
@@ -114,7 +115,7 @@ console.log(convertRgbToHexa(rgbColor)); */
 // Ejemplo de uso
 const originalArray = [1, 2, 3, 4, 5];
 const shuffledArray = shuffleArray(originalArray);
-console.log(shuffledArray); */
+console.log(shuffledArray);
 
 // #9 Llame a su función factorial, toma un número entero como parámetro y devuelve un factorial del número.
 
@@ -219,7 +220,7 @@ console.log(isPrime(5));
 console.log(isPrime(4)); */
 
 // #16 Escriba una función que verifique si todos los elementos son únicos en un array.
-/* const sonUnicos = (arreglo) => {
+const sonUnicos = (arreglo) => {
   for (let i = 0; i < arreglo.length; i++) {
     for (let j = i + 1; j < arreglo.length; j++) {
       if (arreglo[i] === arreglo[j]) {
@@ -229,11 +230,11 @@ console.log(isPrime(4)); */
   }
   return true;
 };
-console.log(sonUnicos([1, 2, 3, 4, 5])); 
-console.log(sonUnicos([1, 2, 3, 4, 1]));  */
+console.log(sonUnicos([1, 2, 3, 4, 5, 5]));
+console.log(sonUnicos([1, 2, 3, 4, 1]));
 
 // #17 Escriba una función que verifique si todos los elementos de un array son del mismo tipo de datos.
-/* const tiposIguales = (arreglo) => {
+const tiposIguales = (arreglo) => {
   if (arreglo.length === 0) {
     return "El arreglo esta vacio";
   }
@@ -246,10 +247,10 @@ console.log(sonUnicos([1, 2, 3, 4, 1]));  */
     arregloAux.push(typeof elemento);
   }
   return arregloAux;
-  return "Todos los elementod son del mismo tipo"
+  return "Todos los elementod son del mismo tipo";
 };
 console.log(tiposIguales(["hola"]));
-console.log(tiposIguales([1, 2, 3])); */
+console.log(tiposIguales([1, 2, 3]));
 
 // #18 El nombre de las variables de JavaScript no admite caracteres o símbolos especiales, excepto $ o _. Escriba una función isValidVariable que verifique si una variable es válida o inválida.
 /* const isValidVariable = (variable) => {
