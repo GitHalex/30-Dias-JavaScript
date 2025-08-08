@@ -88,6 +88,13 @@ const usuariosConectados = (users) => {
   let maspuntos = [];
   let cantidadConectados = 0;
   let puntos = 0;
+  /*  [
+  ["Alex", {email: "alex@alex.com", skills: [...], age: 20, ...}],
+  ["Asab", {email: "asab@asab.com", skills: [...], age: 25, ...}],
+  ["Brook", {...}],
+  ...
+] */
+
   for (const [nombre, usuario] of Object.entries(users)) {
     if (usuario.isLoggedIn) {
       conectados.push(nombre);
@@ -108,19 +115,20 @@ const usuariosConectados = (users) => {
 console.log(usuariosConectados(users));
 
 //Esta mierda no funciona
-/* const findDevMERN = (users) => {
+const findDevMERN = (users) => {
   let personasMern = [];
+  const stackMERN = ["MongoDB", "Express", "React", "Node"];
   for (const [nombre, usuario] of Object.entries(users)) {
     let habilidades = usuario.skills;
-    const letras = ["M", "E", "R", "N"];
-    if (letras.every((letra) => habilidades.includes(letra))) {
+
+    if (stackMERN.every((tech) => habilidades.includes(tech))) {
       personasMern.push(nombre);
     }
   }
   return personasMern;
 };
 
-console.log(findDevMERN(users)); */
+console.log(findDevMERN(users));
 
 // #4 Establezca su nombre en el objeto usuarios sin modificar el objeto usuarios original
 /* const copia = Object.assign({ hanyinson: { email: "cale@gmail.com" } }, users);
