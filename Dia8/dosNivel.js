@@ -83,7 +83,7 @@ const encontrarPersonaConMasHabilidades = (users) => {
 let nombreMoreSkills = encontrarPersonaConMasHabilidades(users);
 console.log(`La persona que tiene mas skills es ${nombreMoreSkills}`);
 
-/* const usuariosConectados = (users) => {
+const usuariosConectados = (users) => {
   let conectados = [];
   let maspuntos = [];
   let cantidadConectados = 0;
@@ -105,7 +105,7 @@ console.log(`La persona que tiene mas skills es ${nombreMoreSkills}`);
   )} cantidad ${puntos}`;
 };
 
-console.log(usuariosConectados(users)); */
+console.log(usuariosConectados(users));
 
 //Esta mierda no funciona
 /* const findDevMERN = (users) => {
