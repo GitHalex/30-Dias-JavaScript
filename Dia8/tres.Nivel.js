@@ -1,10 +1,10 @@
-/* const personAccount = {
+const personAccount = {
   firstName: "Alex",
   lastName: "Calcina",
   incomes: [],
   expenses: [],
 
-  totalIncome: function () {
+  totalIncome() {
     let total = 0;
     for (const income of this.incomes) {
       total += income.amount;
@@ -12,7 +12,7 @@
     return total;
   },
 
-  totalExpense: function () {
+  totalExpense() {
     let total = 0;
     for (const expense of this.expenses) {
       total += expense.amount;
@@ -20,19 +20,19 @@
     return total;
   },
 
-  accountInfo: function () {
+  accountInfo() {
     return `${this.firstName} ${this.lastName}'s account information`;
   },
 
-  addIncome: function (descripcion, amount) {
+  addIncome(descripcion, amount) {
     this.incomes.push({ descripcion, amount });
   },
 
-  addExpense: function (descripcion, amount) {
+  addExpense(descripcion, amount) {
     this.expenses.push({ descripcion, amount });
   },
 
-  accountBalance: function () {
+  accountBalance() {
     const income = this.totalIncome();
     const expense = this.totalExpense();
     const balance = income - expense;
@@ -48,7 +48,7 @@ personAccount.addExpense("Utilities", 200);
 console.log(personAccount.accountInfo());
 console.log(`Total Income: $${personAccount.totalIncome()}`);
 console.log(`Total Expense: $${personAccount.totalExpense()}`);
-console.log(personAccount.accountBalance()); */
+console.log(personAccount.accountBalance());
 
 const users = [
   {
@@ -125,10 +125,15 @@ const products = [
 
 console.log(typeof users);
 const signUp = (users) => {
-  for (const [nombre, usuario] of Object.entries(users)) {
-    if (usuario.isLoggedIn) {
-      return `el usuario ${nombre} ya tiene una cuenta`;
+  const logeados = [];
+  for (const nombre of users) {
+    if (nombre.isLoggedIn) {
+      logeados.push(nombre.username);
+      console.log(`el usuario ${nombre.username} ya tiene una cuenta`);
+    } else {
+      logeados.push(nombre.username);
     }
   }
+  return logeados;
 };
-console.log(signUp());
+console.log(signUp(users));
