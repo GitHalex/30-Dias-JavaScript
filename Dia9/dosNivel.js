@@ -1,5 +1,5 @@
-// const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
-const countries = require("../countries.js");
+const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
+// import countries from "../countries.js";
 const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 const products = [
@@ -12,23 +12,28 @@ const products = [
 ];
 
 console.log(typeof products);
+console.log(countries);
 
-/* const totalPrecio = products.map((product) => product.price);
-console.log(totalPrecio);  //[3,6, ' ',8, 10,, ' ' ] */
 /* const totalPrecio = products
   .map((producto) => producto.price)
   .filter((precio) => typeof precio === "number" && !isNaN(precio));
 console.log(totalPrecio); //[3,6,8,10,] */
 
-/* const totalPrecio = products
+const totalPrecio = products
   .map((producto) => producto.price)
   .filter((precio) => typeof precio === "number" && !isNaN(precio))
   .reduce((accumulador, valor_actual) => accumulador + valor_actual);
 console.log(totalPrecio); //[3,6,8,10,]
-console.log("Precio total de los productos es: ", totalPrecio); //27 */
+console.log("Precio total de los productos es: ", totalPrecio); //27
+
+const totalPrecio2 = products.reduce((sum, product) => {
+  const n = Number(product?.price); // convierte "10" -> 10, "abc" -> NaN
+  return sum + (Number.isFinite(n) ? n : 0);
+}, 0);
+console.log(totalPrecio2);
 
 // #2 Encuentre la suma del precio de los productos usando sólo reduce(callback)).
-/* const validPrices = products.filter(
+const validPrices = products.filter(
   (producto) => typeof producto.price === "number" && !isNaN(producto.price)
 );
 console.log(validPrices);
@@ -37,10 +42,10 @@ const totalSuma = validPrices.reduce(
   (accumulator, producto) => accumulator + producto.price,
   0
 );
-console.log(totalSuma); */
+console.log(totalSuma);
 
 // #3 Declara una función llamada categorizeCountries que retorna un array de países que tienen algún patrón común (encuentras el array de países en este repositorio como countries.js(ej 'land', 'ia', 'island','stan')).
-/* const categorizeCountries = (patron) => {
+const categorizeCountries = (patron) => {
   const categorizedCountries = countries.filter((pais) =>
     pais.toLowerCase().includes(patron.toLowerCase())
   );
@@ -51,12 +56,12 @@ const countriesWithLand = categorizeCountries("land");
 console.log(countriesWithLand);
 
 const countriesWithIs = categorizeCountries("en");
-console.log(countriesWithIs); */
+console.log(countriesWithIs);
 
 // #4 Cree una función que retorne un array de objetos, que es la letra y el número de veces que la letra usa para empezar el nombre de un país.
 // const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
 
-/* const countStartingLetters = (countries) => {
+const countStartingLetters = (countries) => {
   const startingLettersCount = {};
 
   for (const country of countries) {
@@ -83,7 +88,7 @@ console.log(countriesWithIs); */
 
 // Ejemplo de uso
 const startingLetters = countStartingLetters(countries);
-console.log(startingLetters); */
+console.log(startingLetters);
 
 // #5 Declara una función getFirstTenCountries y retorna un array de diez países. Utiliza diferente programación funcional para trabajar en el array countries.js.
 /* const getFirstTenCountries = () => {
