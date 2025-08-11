@@ -19,6 +19,7 @@ console.log(cubo(callback, 4));
 const countries = ["Finland", "Sweden", "Denmark", "Norway", "IceLand"];
 const names = ["Asabeneh", "Mathias", "Elias", "Brook"];
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const mix = ["alex", 31, "calcina", 2025];
 
 /* const mayusculasCountry = countries.map((countri) =>
   countri.toLocaleUpperCase()
@@ -40,9 +41,15 @@ console.log(paisesTam6); */
 const paisesTam6 = countries.filter((countri) => countri.length >= 6);
 console.log(paisesTam6);
 
-console.log(countries);
 const countriE = countries.filter((countri) => countri.includes("E"));
 console.log(countriE);
+
+function getStringLists(arregloMix) {
+  const unicos = arregloMix.filter((elemento) => typeof elemento == "string");
+  return unicos;
+}
+
+console.log(`arreglo ${mix} => puras cadenas ${getStringLists(mix)}`);
 
 const products = [
   { product: "banana", price: 3 },
@@ -60,9 +67,8 @@ console.log(asignat);
 const priceOnly = products.filter((product) => product.price > 0);
 console.log(priceOnly);
 
-/* console.log(numbers);
 const sumaNumbers = numbers.reduce((acc, cur) => acc + cur, 0);
-console.log(sumaNumbers); */
+console.log(sumaNumbers);
 
 console.log(countries);
 
@@ -76,14 +82,14 @@ console.log(lengthName);
 console.log(lengthName); */
 
 /* const landCountry = countries.every((countri) => countri.includes("land"));
-console.log(landCountry);
- */
+console.log(landCountry); */
 
-/* const findCountry = countries.find((countri) => countri.length === 6);
-const possCountry = countries.findIndex((countri) => countri.length === 6);
+const findCountry = countries.find((countri) => countri.length === 6);
 console.log(findCountry);
-console.log(possCountry); */
 
-/* console.log(countries);
+const possCountry = countries.findIndex((countri) => countri.length === 6);
+
+console.log(possCountry);
+
 const possNorwey = countries.findIndex((poss) => poss === "Norway");
-console.log(possNorwey); */
+console.log(possNorwey);
