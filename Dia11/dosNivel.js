@@ -43,7 +43,10 @@ const users = [
   },
 ];
 
-console.log(users);
+for (const usuario of users) {
+  let [name, scores, skills, age] = Object.keys(usuario);
+  console.log(name, scores, skills, age);
+}
 
 for (const { name, scores, skills, age } of users) {
   if (skills.length <= 2) {
