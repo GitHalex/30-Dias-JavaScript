@@ -44,7 +44,7 @@ const users = [
 ];
 
 for (const usuario of users) {
-  let [name, scores, skills, age] = Object.keys(usuario);
+  let [name, scores, skills, age] = Object.values(usuario);
   console.log(name, scores, skills, age);
 }
 

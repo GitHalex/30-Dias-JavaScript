@@ -3,8 +3,8 @@ const b = [3, 4, 5, 7];
 const countries = ["Finland", "Sweden", "Norway"];
 
 //  #1 crear un set vacío
-/* const vacio = new Set();
-console.log(vacio); */
+const vacio = new Set();
+console.log(vacio);
 
 // # 2 Crear un set que contenga de 0 a 10 utilizando el bucle
 const num10 = new Set();

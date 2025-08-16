@@ -1,4 +1,4 @@
-export const countries_data = [
+const countries_data = [
   {
     name: "Afghanistan",
     capital: "Kabul",
@@ -2257,5 +2257,14 @@ export const countries_data = [
   },
 ];
 
-console.log(countries_data);
-module.exports = countries_data;
+for (const {
+  name: n,
+  capital: c,
+  languages: l,
+  population: p,
+  flag: f,
+  region: r,
+  area: a,
+} of countries_data) {
+  console.log(`nombre => ${n} capital => ${c} poblacion => ${p} idioames ${l}`);
+}
