@@ -1,9 +1,7 @@
 // #1 Calcula los ingresos anuales totales de la persona a partir del siguiente texto. 'Gana 4000 euros de sueldo al mes, 10000 euros de bonificación anual, 5500 euros de cursos online al mes'
 let texto =
   "Gana 4000 euros de sueldo al mes, 10000 euros de bonificacion anual, 5500 euros de cursos online al mes";
-
 const patron = /\d+/g;
-
 const matches = texto.match(patron);
 let [mensual, bonificacion, online] = matches;
 let total =
