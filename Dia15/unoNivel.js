@@ -31,9 +31,10 @@ class Perro extends Animal {
 
 const perro1 = new Perro("Marrano", 4, "amarillo", 4, "Golden");
 console.log(perro1.fullName());
-console.log(perro1.setRaza());
+console.log(perro1.setRaza("Golden"));
+console.log(perro1);
 
-const stringPaises = `[
+/* const stringPaises = `[
 {
   nombre: 'Agentina',
   poblacion: 44
@@ -43,4 +44,4 @@ const stringPaises = `[
   poblacion: 212
 }]`;
 
-const paises = JSON.parse(stringPaises);
+const paises = JSON.parse(stringPaises); */
